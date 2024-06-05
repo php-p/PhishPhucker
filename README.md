@@ -4,7 +4,7 @@
 
 ## Overview
 
-Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool designed to disrupt the phishing industry like never before. PhishPhucker ingests public and custom phishing feeds/URLs, scans them using advanced "Webamon" technology, and launches sophisticated countermeasures to thwart phishing attacks. Our mission is to make phishing an unprofitable and ineffective endeavor by mimicking real user behavior and overwhelming attackers with arbitrary but human-like data.
+Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool designed to disrupt the phishing industry like never before. PhishPhucker ingests public and custom phishing feeds/URLs, scans them, and launches sophisticated countermeasures to thwart phishing attacks. Our mission is to make phishing an unprofitable and ineffective endeavor by mimicking real user behavior and overwhelming attackers with arbitrary but human-like data.
 
 ## Features
 
@@ -90,7 +90,7 @@ We welcome contributions from the community to enhance PhishPhucker. Feel free t
 
 ## License
 
-PhishPhucker is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
+PhishPhucker is released under the Apache 2.0 License. See the [LICENSE](LICENSE) file for more details.
 
 ## Acknowledgements
 
@@ -107,8 +107,8 @@ PhishPhucker: Turning the Tide Against Phishing.
 
 ---
 
-![GitHub Stars](https://img.shields.io/github/stars/yourusername/PhishPhucker?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/yourusername/PhishPhucker?style=social)
-![GitHub Issues](https://img.shields.io/github/issues/yourusername/PhishPhucker)
-![GitHub License](https://img.shields.io/github/license/yourusername/PhishPhucker)
+![GitHub Stars](https://img.shields.io/github/stars/php-p/PhishPhucker?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/php-p/PhishPhucker?style=social)
+![GitHub Issues](https://img.shields.io/github/issues/php-p/PhishPhucker)
+![GitHub License](https://img.shields.io/github/license/php-p/PhishPhucker)
 
