@@ -24,6 +24,7 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
 
 - Python 3.11 or higher
 - Docker (optional, for containerized deployment)
+- Chrome Driver
 - Git
 
 ### Steps
@@ -97,7 +98,7 @@ PhishPhucker is released under the Apache 2.0 License. See the [LICENSE](LICENSE
 ## Acknowledgements
 
 - Thanks to the open-source community for their invaluable contributions and feedback.
-- Special mention to cybersecurity professionals who inspire and guide the project's direction.
+- Special mention to the decade long successful Threat Actors who's actions inspire and guide this projects direction.
 
 ## Disclaimer
 
