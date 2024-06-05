@@ -9,7 +9,7 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
 ## Features
 
 - **Ingest Multiple Phishing Feeds**: Seamlessly integrate public phishing feeds and custom URLs for comprehensive coverage.
-- **Webamon Scanning**: Extract scripts and phishing kits from malicious websites, identify the endpoints where credentials are sent.
+- **Website Scanning**: Extract scripts and phishing kits from malicious websites, identify the endpoints where credentials are sent.
 - **Simulated Post Requests**: Recreate phishing post requests and flood attackers' endpoints with realistic-looking data.
 - **Distributed Client Network**: Deploy PhishPhucker clients across multiple web edge points to mimic real-world phishing actions.
 - **Pseudo-Random Timing**: Vary intervals between actions to avoid detection and mimic human behavior.
@@ -57,10 +57,10 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
      python ingest_feeds.py
      ```
 
-2. **Perform Webamon Scan**:
+2. **Perform Website Scan**:
    - Execute the scan to extract phishing kits and endpoints.
      ```bash
-     python webamon_scan.py
+     python web_scan.py
      ```
 
 3. **Disrupt Phishing Operations**:
