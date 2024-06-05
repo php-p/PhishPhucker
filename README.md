@@ -14,6 +14,8 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
 - **Distributed Client Network**: Deploy PhishPhucker clients across multiple web edge points to mimic real-world phishing actions.
 - **Pseudo-Random Timing**: Vary intervals between actions to avoid detection and mimic human behavior.
 - **Multiple User Agents and Source IPs**: Use diverse browser user agents and source IPs (ISPs) to simulate a wide range of victims.
+- **Network Proxy**: Utilize on-prem & internet proxy solutions to manipulate network data + requests.
+- **Real Dummy Accounts**: Modern phishing kits employ an Account Checking feature that verifies if the credentials work for the provided service. PhishPhucker accounts will be returned as legit.
 - **Open Source and Extensible**: Fully open source with an active community contributing to its development and enhancement.
 
 ## Installation
@@ -100,6 +102,7 @@ PhishPhucker is released under the Apache 2.0 License. See the [LICENSE](LICENSE
 ## Disclaimer
 
 PhishPhucker is intended for ethical use only. Unauthorized use of this software to interfere with legitimate websites or services is strictly prohibited. The authors and contributors are not responsible for any misuse of the software.
+
 
 ---
 
