@@ -28,7 +28,6 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
 ## Installation
 
 ### Prerequisites
-- Python 3.11 or higher
 - Docker
 - Git
 
