@@ -1,9 +1,12 @@
 # PhishPhucker
 
 ![PhishPhucker Logo](https://i.ibb.co/jD9dqMm/openart-image-5-C4-YIl-FF-1717586639754-raw.jpg)
-
 ## In Partnership With
 ![Webamon Logo](https://i.ibb.co/ggbMv7C/weblogo.png)
+
+## The Idea
+- **Phuck The Phishers**: Make the effort of a successful phishing campaign much harder than the rewards.
+- **Change How We Block**: Multiple phishing websites rely on the same backend endpoint to receive phished credentials. By exposing the required endpoint for the phishing kit to operate, we can block on our network tools. 1x Block = n phishing domains.
 
 ## Overview
 
@@ -12,6 +15,7 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
 ## Features
 
 - **Ingest Multiple Phishing Feeds**: Seamlessly integrate public phishing feeds and custom URLs for comprehensive coverage.
+- **Layered Security**: By exposing and then blocking the endpoints that receive comp'd creds, end users can fall for a phish but network applications block the POST. 
 - **Website Scanning**: Extract scripts and phishing kits from malicious websites, identify the endpoints where credentials are sent.
 - **Simulated Post Requests**: Recreate phishing post requests and flood attackers' endpoints with realistic-looking data.
 - **Distributed Client Network**: Deploy PhishPhucker clients across multiple web edge points to mimic real-world phishing actions.
