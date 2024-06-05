@@ -37,7 +37,7 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/PhishPhucker.git
+   git clone https://github.com/php-p/PhishPhucker.git
    cd PhishPhucker
    ```
 
