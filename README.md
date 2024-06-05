@@ -28,7 +28,7 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
 ## Installation
 
 ### Prerequisites
-
+- Linux base machine (Docker for Widnows usage)
 - Python 3.11 or higher
 - Docker (optional, for containerized deployment)
 - Git
@@ -56,23 +56,8 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
    docker build -t phishphucker .
    docker run -d phishphucker
    ```
-
-## Usage
-
-1. **Feed Ingestion - TODO**:
-   - Add public phishing feeds or custom URLs to the `feeds.txt` file.
-   - Run the ingestion module to fetch the latest data.
-     ```bash
-     python ingest_feeds.py
-     ```
-
-2. **Disrupt Phishing Operations**:
-   - Launch the Phish Phucker to send arbitrary data to attackers.
-     ```bash
-     python phishphucker.py
-     ```
      
-3. **Sample Output**:
+5. **Sample Output**:
      ```json
      {
     "utc": "2024-06-05 16:57:54",
