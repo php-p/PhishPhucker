@@ -28,9 +28,8 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
 ## Installation
 
 ### Prerequisites
-- Linux base machine (Docker for Widnows usage)
 - Python 3.11 or higher
-- Docker (optional, for containerized deployment)
+- Docker
 - Git
 
 ### Steps
@@ -41,23 +40,13 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
    cd PhishPhucker
    ```
 
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the Application**:
-   ```bash
-   python phishphucker.py
-   ```
-
-4. **(Optional) Deploy with Docker**:
+2. **Deploy with Docker**:
    ```bash
    docker build -t phishphucker .
    docker run -d phishphucker
    ```
      
-5. **Sample Output**:
+3. **Sample Output**:
      ```json
      {
     "utc": "2024-06-05 16:57:54",
