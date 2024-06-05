@@ -1,6 +1,6 @@
 # PhishPhucker
 
-![PhishPhucker Logo](https://example.com/logo.png)
+![PhishPhucker Logo](https://i.ibb.co/jD9dqMm/openart-image-5-C4-YIl-FF-1717586639754-raw.jpg)
 
 ## Overview
 
