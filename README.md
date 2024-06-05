@@ -2,6 +2,9 @@
 
 ![PhishPhucker Logo](https://i.ibb.co/jD9dqMm/openart-image-5-C4-YIl-FF-1717586639754-raw.jpg)
 
+## In Partnership With
+![Webamon Logo](https://i.ibb.co/ggbMv7C/weblogo.png)
+
 ## Overview
 
 Welcome to **PhishPhucker**, the revolutionary open-source cybersecurity tool designed to disrupt the phishing industry like never before. PhishPhucker ingests public and custom phishing feeds/URLs, scans them, and launches sophisticated countermeasures to thwart phishing attacks. Our mission is to make phishing an unprofitable and ineffective endeavor by mimicking real user behavior and overwhelming attackers with arbitrary but human-like data.
